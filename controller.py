@@ -2,9 +2,10 @@ import socketio
 import os
 
 # Secret key to sign JWT tokens (must be kept secret)
-TOKEN = os.getenv('CONTROLLER_TOKEN')
-if not TOKEN:
-    raise ValueError("No TOKEN set for CONTROLLER")
+# TOKEN = os.getenv('CONTROLLER_TOKEN')
+# if not TOKEN:
+#     raise ValueError("No TOKEN set for CONTROLLER")
+TOKEN = "developer"
 # Create a new Socket.IO client instance
 sio = socketio.Client()
 
